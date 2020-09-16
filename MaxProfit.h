@@ -8,6 +8,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <chrono>
+#include <cstring>
 
 class MaxProfit {
 private:

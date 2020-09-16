@@ -13,7 +13,7 @@ int lookup_price(vector<char *> cards_set, char ** names, int * prices, int card
     // get prices of cards in cards_set by checking with names
     int total = 0;
     // int index = 0;
-    for (int i = 0; i < cards_set.size(); i++) { // loop through cards in cards_set
+    for (long unsigned int i = 0; i < cards_set.size(); i++) { // loop through cards in cards_set
         for (int j = 0; j < cards_in_problem; j++) { // search for matching card in names
             if (strcmp(cards_set[i], names[j]) == 0) {
                 total += prices[j];
@@ -26,7 +26,7 @@ int lookup_price(vector<char *> cards_set, char ** names, int * prices, int card
 
 int compute_profit(vector<char *> cards_set, int market_num, char ** market_names, int * market_values) {
     int profit = 0;
-    for (int i = 0; i < cards_set.size(); i++) { // loop through cards in cards_set
+    for (long unsigned int i = 0; i < cards_set.size(); i++) { // loop through cards in cards_set
         int t_or_f = 0;
         for (int j = 0; j < market_num; j++) { // search for matching card in market_names
             if (strcmp(cards_set[i], market_names[j]) == 0) {
